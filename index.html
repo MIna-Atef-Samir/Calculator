@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-5" style="background-color: crimson; color: #fff; padding: 50px; border-radius: 20px;">
+        <header style="background-color: rgb(160, 14, 43); padding: 20px; border-radius: 25px; margin-bottom: 20px;">
+            <h1 class="text-center">Calculator</h1>
+        </header>
+        <section>
+            <form class="w-75 d-flex mx-auto justify-content-around" style="flex-wrap: wrap;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">First num</label>
+                          <input required type="number" class="form-control text-center" id="num1" aria-describedby="emailHelp" placeholder="Write your num">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Operation</label>
+                            <select required type="text" class="form-control text-center" id="op" placeholder="Write your Operation">
+                                <option class="text-center" value="" selected disabled>Choose ..</option>
+                                <option class="text-center" value="+">+</option>
+                                <option class="text-center" value="-">-</option>
+                                <option class="text-center" value="*">X</option>
+                                <option class="text-center" value="/">/</option>
+                                <option class="text-center" value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Second num</label>
+                            <input required type="number" class="form-control text-center" id="num2" placeholder="Write your num">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-info w-100 my-3" id="calc">Calculate</button>
+                <div class="alert alert-info w-100 text-center" role="alert" id="result">
+                    0
+                  </div>
+              </form>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
